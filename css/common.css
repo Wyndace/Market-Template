@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/*Обнуляющие стили*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*Обнуляющие стили*/
+* {
+  transition-duration: 0.1s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  color: #676868;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+  align-content: unset;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+header {
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+  flex: 1 0 auto;
+}
+
+footer {
+  width: 100vw;
+  flex: 0 0 auto;
+}
+
+.content {
+  min-width: 1200px;
+}
+
+.header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header__top {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #f1f1f1;
+  width: 100vw;
+}
+.header__top .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 607px;
+  min-width: 607px;
+  margin-right: 555px;
+  height: 100%;
+  padding: 0 35px;
+}
+.header__top .content .navbar {
+  width: auto;
+  height: 20px;
+}
+.header__top .content .navbar__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: auto;
+}
+.header__top .content .navbar__link {
+  color: #676868;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-align: left;
+}
+.header__top .content .navbar__link:not(:last-child) {
+  margin-right: 15px;
+}
+.header__top .content .navbar__link:hover {
+  color: #747474;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+.header__top .content .navbar__link:active {
+  color: #5e5e5e;
+  transform: scale(0.95);
+}
+.header__top-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: unset;
+  width: 120px;
+  height: 100%;
+  position: relative;
+  margin: 0 25px;
+}
+.header__top-btns::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 14px;
+  left: 0;
+  background-color: #c4c4c4;
+}
+.header__top-btns::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 14px;
+  right: 0;
+  background-color: #c4c4c4;
+}
+.header__login {
+  width: 110px;
+  height: 18px;
+  color: #db3e6d;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-align: left;
+}
+.header__login-link {
+  color: #db3e6d;
+  display: inline-block;
+}
+.header__login-link:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+  color: #e94475;
+}
+.header__login-link:active {
+  transform: scale(0.95);
+  color: #cc3a65;
+}
+.header__center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+  width: 100vw;
+  height: 100px;
+}
+.header__center .content {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: unset;
+  max-width: 1200px;
+  width: 1200px;
+}
+.header__logo {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  display: inline-block;
+  height: 75px;
+  width: 150px;
+}
+.header__logo-first {
+  width: 50px;
+  display: block;
+  height: 35px;
+  color: #676868;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-align: left;
+}
+.header__logo-second {
+  width: 100px;
+  display: block;
+  height: 35px;
+  color: #db3e6d;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  margin: -10px 41px;
+  text-align: left;
+}
+.header__make-call {
+  width: 195px;
+  height: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+}
+.header__phonebox {
+  display: flex;
+  width: 195px;
+  align-items: center;
+}
+.header__number {
+  width: 170px;
+  height: 30px;
+  color: #343434;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: left;
+  margin: 0 0 0 15px;
+}
+.header__btn-call {
+  height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+.header__about {
+  width: 370px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: unset;
+  align-content: left;
+}
+.header__map {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  align-content: unset;
+  width: 365px;
+  height: 45px;
+}
+.header__map-text {
+  /* Style for "г. Лобня," */
+  width: 334px;
+  height: 60px;
+  color: #676868;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  margin: 0 0 0 15px;
+  text-align: left;
+}
+.header__mail {
+  width: 202px;
+  height: 20px;
+  margin: 10px 0 0 0;
+  display: flex;
+}
+.header__mail-text {
+  margin: 0 0 0 15px;
+}
+.header__cartbox {
+  width: 190px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+.header__cart {
+  width: 190px;
+  height: 40px;
+  display: flex;
+}
+.header__cart-text {
+  width: 156px;
+  height: 40px;
+  color: #676868;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-align: left;
+  margin: 0 0 0 15px;
+}
+.header__btn-make-order {
+  width: 145px;
+  height: 25px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  margin: 10px 0 0 0;
+}
+.header__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+  width: 100vw;
+  min-height: 50px;
+  border-bottom: 5px solid #db3e6d;
+  background-color: #343434;
+}
+.header__bottom .content {
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+}
+.header__main-nav {
+  width: 950px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+}
+.header .main-nav__links {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.header .main-nav__link {
+  padding: 8px 10px;
+  height: 50px;
+  display: inline-block;
+  /* Style for "Главная" */
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  text-align: center;
+  margin: 2px 1px;
+}
+.header .main-nav__link:hover {
+  background-color: #db3e6d;
+}
+.header .main-nav__link-active {
+  background-color: #db3e6d;
+}
+
+.phone {
+  width: 25px;
+  height: 23px;
+  background: url("../img/icons/phone.svg") 50% 50%/auto auto no-repeat;
+  display: inline-block;
+}
+
+.btn {
+  background-color: #db3e6d;
+  padding: 1px 15px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: normal;
+}
+.btn:hover {
+  background-color: #e94475;
+  transform: scale(1.05);
+}
+.btn:active {
+  background-color: #cc3a65;
+  transform: scale(0.95);
+}
+
+.cart {
+  width: 23px;
+  display: inline-block;
+  height: 23px;
+  background: url("../img/icons/cart.svg") 0 0/auto auto no-repeat;
+}
+
+.map {
+  display: inline-block;
+  width: 16px;
+  background: url("../img/icons/map.svg") 0 0/auto auto no-repeat;
+  height: 21px;
+}
+
+.text {
+  /* Style for "0 товаров," */
+  color: #676868;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-align: left;
+}
+
+.btn-text {
+  color: #db3e6d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn-text:hover {
+  color: #e94475;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+.btn-text:active {
+  color: #cc3a65;
+  transform: scale(0.95);
+}
+
+.btn-icon {
+  cursor: pointer;
+}
+.btn-icon:hover {
+  transform: scale(1.25);
+}
+.btn-icon:active {
+  transform: scale(0.85);
+}
+
+.mail {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../img/icons/mail.svg") 50% 50%/auto auto no-repeat;
+}
+
+.copy {
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background: url("../img/icons/copy.svg") 0 0/auto auto no-repeat;
+}
+
+.heart {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background: url("../img/icons/heart.svg") 0 0/auto auto no-repeat;
+}
