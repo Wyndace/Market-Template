@@ -475,7 +475,7 @@ footer {
 }
 
 li:hover > .main-nav__link,
-.main-nav__link:hover {
+li:hover {
   background-color: #db3e6d;
 }
 
