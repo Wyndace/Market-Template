@@ -439,6 +439,12 @@ footer {
   align-items: center;
   align-content: unset;
 }
+.header .main-nav__links > li {
+  position: relative;
+}
+.header .main-nav__links > li:hover > .submenu {
+  display: block;
+}
 .header .main-nav__links {
   width: 100%;
   min-height: 50px;
@@ -464,10 +470,12 @@ footer {
   text-align: center;
   margin: 2px 1px;
 }
-.header .main-nav__link:hover {
+.header .main-nav__link-active {
   background-color: #db3e6d;
 }
-.header .main-nav__link-active {
+
+li:hover > .main-nav__link,
+.main-nav__link:hover {
   background-color: #db3e6d;
 }
 
@@ -576,4 +584,66 @@ footer {
   width: 16px;
   height: 15px;
   background: url("../img/icons/heart.svg") 0 0/auto auto no-repeat;
+}
+
+li:hover > .submenu {
+  display: block;
+}
+
+.submenu > li:hover a {
+  background-color: #ffffff;
+}
+
+.submenu > li:hover > a {
+  color: #db3e6d !important;
+}
+
+.submenu {
+  max-width: 240px;
+  position: absolute;
+  min-height: 35px;
+  display: none;
+  left: 1px;
+  top: 40px;
+  padding: 10px 0 0 0;
+}
+.submenu .submenu {
+  left: 100%;
+  top: 0;
+  padding: 0;
+}
+.submenu__links {
+  background-color: #db3e6d;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.submenu li {
+  min-height: 35px;
+  padding: 16px 30px;
+  width: 100%;
+  position: relative;
+}
+.submenu li:hover {
+  background-color: #ffffff;
+}
+.submenu li:hover > a {
+  color: #db3e6d !important;
+}
+.submenu li:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.submenu__link {
+  /* Style for "Кофе" */
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  min-height: 100%;
 }
