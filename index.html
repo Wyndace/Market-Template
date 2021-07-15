@@ -15,7 +15,9 @@
   <!-- Подключаем основные стили -->
   <link rel="stylesheet" href="./css/common.css" />
   <!-- Подключаем стили главной страницы -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="./css/main.css" />
+
   <!-- Подключаем шрифты -->
   <link rel="stylesheet" href="./fonts/fonts.css" />
 </head>
@@ -138,7 +140,29 @@
   </header>
   <main>
     <!--Код основной части-->
-    <section id="" class="">
+    <section id="slider" class="slider">
+      <!-- Код для первой секции сюда -->
+      <div class="content">
+        <div class="swiper-container">
+          <button class="swiper-button-prev btn slider-btn"><img src="./img/icons/arrow.svg" alt="previous"></button>
+          <button class="swiper-button-next btn slider-btn"><img src="../img/icons/arrow.svg" alt="next"></button>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="https://picsum.photos/1200/400?random=1" alt="first img">
+            </div>
+            <div class="swiper-slide"><img src="https://picsum.photos/1200/400?random=2" alt="second img"></div>
+            <div class="swiper-slide"><img src="https://picsum.photos/1200/400?random=3" alt="third img"></div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-------------------------------->
+      </div>
+    </section>
+    <section id="sidebar" class="sidebar">
       <div class="content">
         <!-- Код для первой секции сюда -->
 
@@ -156,6 +180,7 @@
     </div>
   </footer>
   <!-- Подключаем основной скрипт -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
