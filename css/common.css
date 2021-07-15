@@ -104,6 +104,7 @@ body {
   align-items: center;
   align-content: unset;
   overflow-x: hidden;
+  min-width: 0;
   height: 100%;
 }
 
@@ -113,6 +114,7 @@ header {
 
 main {
   width: 100vw;
+  min-width: 0;
   flex: 1 0 auto;
 }
 
@@ -421,6 +423,7 @@ footer {
   min-height: 50px;
   border-bottom: 5px solid #db3e6d;
   background-color: #343434;
+  z-index: 9;
 }
 .header__bottom .content {
   min-height: 50px;
@@ -490,6 +493,7 @@ li:hover {
   background-color: #db3e6d;
   padding: 1px 15px;
   color: #ffffff;
+  display: inline-block;
   font-family: Roboto;
   font-style: normal;
   cursor: pointer;
@@ -605,10 +609,12 @@ li:hover > .submenu {
   display: none;
   left: 1px;
   top: 40px;
+  z-index: 3;
   padding: 10px 0 0 0;
 }
 .submenu .submenu {
   left: 100%;
+  z-index: 3;
   top: 0;
   padding: 0;
 }
