@@ -458,6 +458,9 @@ footer {
   align-content: center;
   flex-wrap: wrap;
 }
+.header .main-nav__links > li:hover > .header .main-nav__link, .header .main-nav__links > li:hover {
+  background: #db3e6d;
+}
 .header .main-nav__link {
   padding: 8px 10px;
   height: 50px;
@@ -474,11 +477,6 @@ footer {
   margin: 2px 1px;
 }
 .header .main-nav__link-active {
-  background-color: #db3e6d;
-}
-
-li:hover > .main-nav__link,
-li:hover {
   background-color: #db3e6d;
 }
 
@@ -553,6 +551,7 @@ li:hover {
   color: #e94475;
   text-decoration: underline;
   transform: scale(1.05);
+  background: transparent;
 }
 .btn-text:active {
   color: #cc3a65;
